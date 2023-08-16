@@ -10,7 +10,9 @@ Welcome to test's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+`CNN <http://cnn.com>`_
 
+`google <http://google.com>`_
 
 Indices and tables
 ==================
