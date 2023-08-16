@@ -13,15 +13,18 @@ def extract_embedded_links(file_path):
         for match in matches:
             link_text = match.group(1)
             link_url = match.group(2)
-            embedded_links.append((link_text, link_url, line_number))
+            embedded_links.append([file_path, link_text, link_url, line_number])
 
     return embedded_links
 
 rst_file_path = 'rstfiles/source/index.rst'
 embedded_links = extract_embedded_links(rst_file_path)
 
-for link_text, link_url, line_number in embedded_links:
-    print(f"Link Text: {link_text}")
-    print(f"Link URL: {link_url}")
-    print(f"Line Number: {line_number}")
-    print("-" * 20)
+print(embedded_links)
+#->[['rstfiles/source/index.rst', 'CNN', 'http://cnn.com', 13], ['rstfiles/source/index.rst', 'google', 'http://google.com', 15]]
+
+# for link_text, link_url, line_number in embedded_links:
+#     print(f"Link Text: {link_text}")
+#     print(f"Link URL: {link_url}")
+#     print(f"Line Number: {line_number}")
+#     print("-" * 20)
