@@ -12,5 +12,5 @@ print(df)
 
 print("Do you want to save this list? y/n")
 if(input()=="y"):
-    name = time.strftime('%Y%m%d_%H:%M:%S')
-    df.to_csv("data.csv")
+    name = time.strftime('%Y%m%d_%H%M%S')
+    df.to_csv(name+".csv")
