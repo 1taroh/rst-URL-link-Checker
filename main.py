@@ -3,6 +3,7 @@ import os
 import requests
 import pandas as pd
 import time
+import pprint
 
 def get_http_status(url):
     try:
@@ -43,8 +44,13 @@ def list_rst_files(directory):
 # main -----------------------------------
 
 # directory_path = input()
-directory_path = "./test/rstfiles/source/"
+directory_path = "./ee_circuit_exercise_text/"
 rst_file_paths = list_rst_files(directory_path)
+
+print("\nrst files are ..")
+print("--------------------------------------------------------------------------")
+pprint.pprint(rst_file_paths)
+print("--------------------------------------------------------------------------")
 
 
 embedded_links = []
@@ -54,7 +60,10 @@ for rst_file_path in rst_file_paths:
 df = pd.DataFrame(embedded_links)
 df.columns = ["rst file", "text", "line", "URL", "http status"]
 
+print("The dataframe is ..")
+print("--------------------------------------------------------------------------")
 print(df)
+print("--------------------------------------------------------------------------")
 
 print("Do you want to save this list? y/n")
 if(input()=="y"):
