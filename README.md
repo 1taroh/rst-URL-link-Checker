@@ -3,6 +3,7 @@
 ## Installation
 ```bash
 git clone https://github.com/1taroh/rst-URL-link-Checker
+python -m venv venv
 pip install -r requirements.txt
 ```
 
