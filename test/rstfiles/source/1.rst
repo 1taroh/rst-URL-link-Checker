@@ -1,1 +1,5 @@
 `yahoo <http://yahoo.co.jp>`_
+
+`mikamika <http://mikamika.io>`_
+
+`1taroh <https://github.com/1taroh/rst-URL-link-Checkeraaa>`_
