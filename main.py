@@ -52,7 +52,7 @@ for rst_file_path in rst_file_paths:
     embedded_links.extend(extract_embedded_links(rst_file_path))
 
 df = pd.DataFrame(embedded_links)
-df.columns = ["rst fime name", "text", "line", "URL", "http status"]
+df.columns = ["rst file", "text", "line", "URL", "http status"]
 
 print(df)
 
