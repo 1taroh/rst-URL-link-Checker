@@ -44,7 +44,7 @@ def list_rst_files(directory):
 # main -----------------------------------
 
 # directory_path = input()
-directory_path = "./ee_circuit_exercise_text/"
+directory_path = "./test/rstfiles/source/"
 rst_file_paths = list_rst_files(directory_path)
 
 print("\nrst files are ..")
