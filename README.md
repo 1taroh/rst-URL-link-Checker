@@ -1,9 +1,10 @@
 # rst-URL-link-Checker
 
-## Installation
+## Installation for Windows
 ```bash
 git clone https://github.com/1taroh/rst-URL-link-Checker
 python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
