@@ -17,8 +17,9 @@ python main.py
 If you want to save the list, type `y`.
 ```bash
 Do you want to save this list? y/n
-n
+y
 ```
+The list is saved as `yyyymmdd_hhmmss.csv`.
 
 ## Example
 The example files are included.
