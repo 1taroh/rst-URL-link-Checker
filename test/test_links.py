@@ -12,7 +12,7 @@ def extract_embedded_links(file_path):
 
     return matches
 
-rst_file_path = 'rstfiles/source/index.rst'
+rst_file_path = 'rstfiles/source/index.rst' #TODO: ディレクトリを渡してその下のrstファイルを抽出する
 embedded_links = extract_embedded_links(rst_file_path)
 
 for link_text, link_url in embedded_links:
