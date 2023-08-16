@@ -9,7 +9,7 @@ def list_rst_files(directory):
     return rst_files
 
 directory_path = ".\\rstfiles\\source"  # 検索したいディレクトリのパスを指定
-rst_files = list_rst_files(directory_path)
+rst_file_paths = list_rst_files(directory_path)
 
-for rst_file in rst_files:
-    print(rst_file)
+for rst_file_path in rst_file_paths:
+    print(rst_file_path)
