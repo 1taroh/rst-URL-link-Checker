@@ -1,6 +1,6 @@
 import re
 
-def extract_embedded_links_with_line_numbers(file_path):
+def extract_embedded_links(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
@@ -18,7 +18,7 @@ def extract_embedded_links_with_line_numbers(file_path):
     return embedded_links
 
 rst_file_path = 'rstfiles/source/index.rst'
-embedded_links = extract_embedded_links_with_line_numbers(rst_file_path)
+embedded_links = extract_embedded_links(rst_file_path)
 
 for link_text, link_url, line_number in embedded_links:
     print(f"Link Text: {link_text}")
