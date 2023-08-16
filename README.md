@@ -7,7 +7,7 @@ pip install -r requirements.txt
 ```
 
 ## How to use
-Change `directory_path` in `main.py`.
+Change `directory_path` where you want to check URL link in `main.py`.
 Then,
 ```bash
 python main.py
